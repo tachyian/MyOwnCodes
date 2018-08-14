@@ -42,7 +42,7 @@ if numel(btag)>1 % then setup the trial
     % get preStim voltage
     TDT.vocOrNoise = btag(aInd(1)+4);
     if TDT.vocOrNoise == '0'
-        TDT.setTDT_PT('NoiseSc',.007);  % default = 0.007
+        TDT.setTDT_PT('NoiseSc',.007);  % default = 0.007, arbitrarily set to make it similar to the spl of vocalization.
         display('Background will be a noise.')
     elseif TDT.vocOrNoise == '1'
         display('Background will be a chorus.')
